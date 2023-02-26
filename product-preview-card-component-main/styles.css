@@ -1,0 +1,175 @@
+   /* - Mobile: 375px
+- Desktop: 1440px */
+   
+   :root {
+
+--primary-dark-cyan: hsl(158, 36%, 37%);
+--primary-cream: hsl(30, 38%, 92%);
+
+--neutral-very-dark-blue: hsl(212, 21%, 14%);
+--neutral-gray-blue: hsl(228, 12%, 48%);
+--neutral-white: hsl(0, 0%, 100%);
+
+/* fonts */
+
+--ff-one: 'Fraunces', serif;
+--ff-two: 'Montserrat', sans-serif;
+
+--fw-medium: 500;
+--fw-bold: 700;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.background {
+    background-color: var(--primary-cream);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--neutral-white);
+    width: 90%;
+    max-width: 345px;
+    border-radius: .7rem;
+    overflow: hidden;
+}
+
+.bottom {
+    width: 90%;
+    margin: 1.3rem;
+}
+
+h2 {
+    font-family: var(--ff-two);
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 500;
+    opacity: .7;
+    letter-spacing: 4px;
+}
+
+h1 {
+    font-weight: var(--fw-bold);
+    font-size: 2rem;
+    line-height: 1;
+    padding: 1rem 0;
+    font-family: var(--ff-one);
+}
+
+p {
+    font-family: var(--ff-two);
+    font-size: .9rem;
+    font-weight: 500;
+    opacity: .7;
+    line-height: 1.6;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-dark-cyan);
+}
+
+ul li:first-of-type {
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: var(--ff-one);
+    margin-right: 1.3rem;
+    padding: 1rem 0;
+}
+
+ul li:last-of-type {
+    text-decoration: line-through;
+    opacity: .9;
+}
+
+button {
+    width: 90%;
+    max-width: 90%;
+    background: var(--primary-dark-cyan);
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    padding: .7rem;
+    font-family: var(--ff-two);
+    color: var(--neutral-white);
+    font-weight: var(--fw-medium);
+}
+
+button img {
+    padding-right: .5rem;
+}
