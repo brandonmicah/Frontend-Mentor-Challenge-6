@@ -98,7 +98,7 @@ select {
 .container {
     background-color: var(--neutral-white);
     width: 90%;
-    max-width: 345px;
+    max-width: 335px;
     border-radius: .7rem;
     overflow: hidden;
 }
@@ -157,8 +157,8 @@ ul li:last-of-type {
 }
 
 button {
-    width: 90%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
     background: var(--primary-dark-cyan);
     border: none;
     display: flex;
